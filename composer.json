@@ -1,0 +1,41 @@
+{
+  "name": "makaronnik/amphp-rabbitmq-manager",
+  "description": "PHP (8.1) Async Manager for RabbitMQ connection and consuming process. Wrapper over PHPinnacle Ridge",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "async",
+    "rabbitmq",
+    "manager",
+    "phpinnacle",
+    "ridge",
+    "amphp"
+  ],
+  "authors": [
+    {
+      "name": "makaronnik",
+      "email": "mkrnnk@gmail.com"
+    }
+  ],
+  "require": {
+
+  },
+  "require-dev": {
+
+  },
+  "config": {
+    "process-timeout": 1800,
+    "optimize-autoloader": true
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Makaronnik\\RabbitMQ\\": "src/"
+    }
+  }
+}
