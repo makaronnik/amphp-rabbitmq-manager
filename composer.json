@@ -45,12 +45,12 @@
   ],
   "autoload": {
     "psr-4": {
-      "Makaronnik\\RabbitMQ\\": "src/"
+      "Makaronnik\\RabbitManager\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Makaronnik\\RabbitMQ\\Test\\": "test/"
+      "Makaronnik\\RabbitManager\\Test\\": "test/"
     }
   },
   "scripts": {
