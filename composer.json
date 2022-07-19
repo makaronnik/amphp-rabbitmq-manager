@@ -31,7 +31,8 @@
     "amphp/phpunit-util": "^v2",
     "phpunit/phpunit": "^9.5",
     "vimeo/psalm": "^v4",
-    "psalm/plugin-phpunit": "*"
+    "psalm/plugin-phpunit": "*",
+    "dg/bypass-finals": "^1.3"
   },
   "config": {
     "process-timeout": 1800,
