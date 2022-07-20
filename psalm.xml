@@ -19,4 +19,4 @@
     <issueHandlers>
         <DuplicateFunction errorLevel="suppress"/>
     </issueHandlers>
-<plugins><pluginClass class="Psalm\PhpUnitPlugin\Plugin"/></plugins></psalm>
+<plugins><pluginClass class="Psalm\PhpUnitPlugin\Plugin"/><pluginClass class="Psalm\MockeryPlugin\Plugin"/></plugins></psalm>

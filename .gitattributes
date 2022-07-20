@@ -1,0 +1,11 @@
+# Ignore all dotted files as mostly they are configs for other tools
+/.*                 export-ignore
+docs                export-ignore
+examples            export-ignore
+test                export-ignore
+phpunit.xml.dist    export-ignore
+psalm.examples.xml  export-ignore
+psalm.xml           export-ignore
+README.md           export-ignore
+CONTRIBUTING.md     export-ignore
+CHANGELOG.md        export-ignore
