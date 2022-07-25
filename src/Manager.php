@@ -11,8 +11,8 @@ use Amp\Deferred;
 use PHPinnacle\Ridge\Client;
 use Psr\Log\LoggerInterface;
 use PHPinnacle\Ridge\Channel;
-use Makaronnik\RabbitManager\Helpers\LogHelper;
 use Cspray\Labrador\AsyncEvent\AmpEventEmitter;
+use Makaronnik\RabbitManager\Helpers\LogHelper;
 use Cspray\Labrador\Exception\InvalidTypeException;
 use Cspray\Labrador\AsyncEvent\StandardEventFactory;
 use Makaronnik\RabbitManager\Events\RabbitClientConnectedEvent;
@@ -83,7 +83,7 @@ final class Manager
             $promise = $this->promiseConnectedClient();
 
             if ($this->isConnectionInProgress === false) {
-                asyncCall([$this, 'performNewConnection']);
+                asyncCall($this->performNewConnection(...));
             }
 
             return $promise;
@@ -125,7 +125,6 @@ final class Manager
 
                 $this->resetState();
                 yield $this->emit(RabbitClientDisconnectedEvent::getName());
-                asyncCall([$this, 'performNewConnection']);
             }
         });
     }
@@ -186,7 +185,9 @@ final class Manager
                 }
 
                 if ($this->numberOfAttempts > 5) {
+                    // @codeCoverageIgnoreStart
                     $delay = 1500;
+                // @codeCoverageIgnoreEnd
                 } else {
                     $delay = $this->numberOfAttempts * 300;
                 }
