@@ -30,10 +30,7 @@ jobs:
         run: composer install -ov
           
       - name: PHPUnit
-        uses: php-actions/phpunit@v2
-        with:
-          version: 9
-          php_version: 8.1
+        run: composer run-script test
           
       - name: Code Style
         run: composer run-script code-style
