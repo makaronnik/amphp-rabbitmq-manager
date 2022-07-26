@@ -16,15 +16,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - name: Composer
-        uses: php-actions/composer@v5
+      - name: Checkout
+        uses: actions/checkout@v3
+           
+      - name: Install PHP
+        uses: shivammathur/setup-php@v2
         with:
-          php_version: 8.1
+          php-version: '8.1'
+          coverage: xdebug
+          tools: composer:v2
+
+      - name: Install dependencies with composer
+        run: composer install -ov
+          
       - name: PHPUnit
         uses: php-actions/phpunit@v2
         with:
           version: 9
           php_version: 8.1
+          
       - name: Code Style
         run: composer run-script code-style
