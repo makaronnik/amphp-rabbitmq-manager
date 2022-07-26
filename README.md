@@ -93,8 +93,5 @@ In this case, it would be wise to use dockerize to get the first response from t
 ## Versioning
 `makaronnik/amphp-rabbitmq-manager` follows the [semver](http://semver.org/) semantic versioning specification.
 
-## Security
-If you discover any security related issues, please email [`me@kelunik.com`](mailto:me@kelunik.com) instead of using the issue tracker.
-
 ## License
 The MIT License (MIT). Please see [`LICENSE`](./LICENSE) for more information.
