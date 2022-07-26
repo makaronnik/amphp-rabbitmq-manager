@@ -1,6 +1,6 @@
 [![StandWithUkraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md)
 [![Unit Testing & Code Lint](https://github.com/makaronnik/amphp-rabbitmq-manager/actions/workflows/main.yml/badge.svg)](https://github.com/makaronnik/amphp-rabbitmq-manager/actions/workflows/main.yml)
-[![Latest Stable Version](http://poser.pugx.org/makaronnik/amphp-rabbitmq-manager/v)](https://packagist.org/packages/makaronnik/amphp-rabbitmq-manager)
+![Latest Release](https://img.shields.io/github/v/release/makaronnik/amphp-rabbitmq-manager)
 [![License](http://poser.pugx.org/makaronnik/amphp-rabbitmq-manager/license)](https://packagist.org/packages/makaronnik/amphp-rabbitmq-manager)
 
 [![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://vshymanskyy.github.io/StandWithUkraine/)
