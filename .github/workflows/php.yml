@@ -1,0 +1,30 @@
+name: PHP Composer
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Composer
+        uses: php-actions/composer@v5
+        with:
+          php_version: 8.1
+      - name: PHPUnit
+        uses: php-actions/phpunit@v2
+        with:
+          version: 9
+          php_version: 8.1
+      - name: Code Style
+        run: composer run-script code-style
