@@ -5,7 +5,7 @@
 
 [![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://vshymanskyy.github.io/StandWithUkraine/)
 
-# amphp-rabbitmq-manager
+# Amphp RabbitMQ Manager
 PHP (8.1) Async Manager for RabbitMQ connection and channels, which is a wrapper over [PHPinnacle Ridge](https://github.com/phpinnacle/ridge) library, based on [Amp](https://amphp.org/)
 
 ## Installation
