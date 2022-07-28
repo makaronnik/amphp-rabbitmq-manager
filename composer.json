@@ -1,6 +1,6 @@
 {
   "name": "makaronnik/amphp-rabbitmq-manager",
-  "description": "PHP (8.1) Async Manager for RabbitMQ connection and consuming process. Wrapper over PHPinnacle Ridge",
+  "description": "PHP (8.1) Async Manager for RabbitMQ connection and channels. Wrapper over PHPinnacle Ridge",
   "homepage": "https://github.com/makaronnik/amphp-rabbitmq-manager",
   "type": "library",
   "license": "MIT",
